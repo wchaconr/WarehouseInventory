@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../models/Company.ts"],
+  "sourcesContent": ["import Warehouse from \"./Warehouses\";\n\nexport default class Company {\n  #name;\n  #warehousesList: any[];\n\n  constructor(name: string) {\n    this.#name = name;\n    this.#warehousesList = [];\n  }\n\n  addwarehouse(newWarehouse: Warehouse): void {\n    this.#warehousesList.push(newWarehouse)\n    console.log(\"The Warehouse was added succesfully\")\n  }\n\n  getWarehouses(): Warehouse[] {\n    return this.#warehousesList;\n  }\n\n  showWarehouseList(): void {\n\n    this.#warehousesList.forEach(p => {\n      console.log(p.this.getWarehouses());\n      p.showProducts();\n      console.log('\\n');\n    });\n  }\n\n\n}"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAEA,cAA6B;AAAA;AAAA;AAAA,EAI3B,YAAY,MAAc;AACxB,iBAAa;AACb,2BAAuB;AAAA;AAAA,EAGzB,aAAa,cAA+B;AAC1C,yBAAqB,KAAK;AAC1B,YAAQ,IAAI;AAAA;AAAA,EAGd,gBAA6B;AAC3B,WAAO;AAAA;AAAA,EAGT,oBAA0B;AAExB,yBAAqB,QAAQ,OAAK;AAChC,cAAQ,IAAI,EAAE,KAAK;AACnB,QAAE;AACF,cAAQ,IAAI;AAAA;AAAA;AAAA;",
+  "names": []
+}

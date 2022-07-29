@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../models/Products.ts"],
+  "sourcesContent": ["export default class Products {\n  #idProduct;\n  #name;\n  #quantity;\n  #price;\n  #colors;\n  #size;\n\n  constructor(idProduct: number, name: string, quantity: number, price: number, colors: string[], size: string[]) {\n    this.#idProduct = idProduct;\n    this.#name = name;\n    this.#quantity = quantity;\n    this.#price = price;\n    this.#colors = colors;\n    this.#size = size;\n\n  }\n\n  setName(newName: string): void {\n    this.#name = newName;\n  }\n\n  setQuantity(newQuantity: number): void {\n    this.#quantity = newQuantity;\n  }\n\n  setPrice(newPrice: number): void {\n    this.#price = newPrice;\n  }\n\n  getProduct(): object {\n    return {\n      idProduct: this.#idProduct,\n      name: this.#name,\n      quantity: this.#quantity,\n      price: this.#price,\n      colors: this.#colors,\n      size: this.#size\n    }\n  }\n\n}"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAA,eAA8B;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA,EAQ5B,YAAY,WAAmB,MAAc,UAAkB,OAAe,QAAkB,MAAgB;AAC9G,sBAAkB;AAClB,iBAAa;AACb,qBAAiB;AACjB,kBAAc;AACd,mBAAe;AACf,iBAAa;AAAA;AAAA,EAIf,QAAQ,SAAuB;AAC7B,iBAAa;AAAA;AAAA,EAGf,YAAY,aAA2B;AACrC,qBAAiB;AAAA;AAAA,EAGnB,SAAS,UAAwB;AAC/B,kBAAc;AAAA;AAAA,EAGhB,aAAqB;AACnB,WAAO;AAAA,MACL,WAAW;AAAA,MACX,MAAM;AAAA,MACN,UAAU;AAAA,MACV,OAAO;AAAA,MACP,QAAQ;AAAA,MACR,MAAM;AAAA;AAAA;AAAA;",
+  "names": []
+}
